@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row m-5">
+        <h1 style="text-align: center">İŞ BAŞVURU FORMU</h1>
+        <div class="col-12">&emsp;</div>
+        <div class="col-6 fw-bold">GENEL BİLGİLER</div>
+        <div class="col-6 fw-bold flo">DİĞER BİLGİLER</div>
+        <div class="col-12">&emsp;</div>
+        <div class="col-2">Adınız*</div>
+        <div class="col-3"><input type="text" /></div>
+        <div class="col-7">&emsp;</div>
+
+        <div class="col-2">Soyadınız*</div>
+        <div class="col-3"><input type="text" /></div>
+
+        <div class="col-7 fw-bold">
+          <label for="ehliyet">Ehliyetiniz var mı?</label>
+        </div>
+
+        <div class="col-2">TC*</div>
+        <div class="col-3"><input type="number" /></div>
+
+        <div class="col-7">
+          <input type="radio" name="ehliyet" id="evet" /><label for="evet"
+            >Evet</label
+          >
+          <input type="radio" name="ehliyet" id="hayir" /><label for="hayir"
+            >Hayır</label
+          >
+        </div>
+
+        <div class="col-12">&emsp;</div>
+
+        <div class="col-5">&emsp;</div>
+
+        <div class="col-7">
+          <label for="ogrenim">Öğrenim durumunuz*</label>
+          <select name="ogrenim" id="lisans">
+            <option value="1">Önlisans</option>
+            <option value="2">Lisans</option>
+            <option value="3">Yüksek Lisans</option>
+            <option value="4">Doktora</option>
+          </select>
+        </div>
+
+        <div class="col-12">&emsp;</div>
+
+        <div class="col-12 fw-bold">
+          <label for="cinsiyet">Cinsiyetiniz</label>
+        </div>
+        <div class="col-3">
+          <input type="radio" name="cinsiyet" id="Kız" /><label for="evet"
+            >Kız *</label
+          >
+          <input type="radio" name="cinsiyet" id="Erkek" /><label for="hayir"
+            >Erkek *</label
+          >
+        </div>
+
+        <div class="col-12">&emsp;</div>
+
+        <div class="col-3">
+          <label for="dogum">Doğum gününüz *</label>
+        </div>
+
+        <div class="col-3"><input name="dogum" type="date" /></div>
+
+        <div class="col-2 fw-bold">(SORULAR &SEVİYELER)</div>
+
+        <div
+          class="col-1 fw-bold border border-dark border border-2 text-center"
+        >
+          Kötü
+        </div>
+        <div
+          class="col-1 fw-bold border border-dark border border-2 text-center"
+        >
+          Orta
+        </div>
+        <div
+          class="col-1 fw-bold border border-dark border border-2 text-center"
+        >
+          İyi
+        </div>
+        <div
+          class="col-1 fw-bold border border-dark border border-2 text-center"
+        >
+          Çok iyi
+        </div>
+
+        <div class="col-6">&emsp;</div>
+
+        <div class="col-2 fw-bold border border-dark border border-2">
+          <label for="a ">İletişim kurma beceriniz nasıl?</label>
+        </div>
+
+        <div class="col-1 text-center"><input type="radio" name="a" /></div>
+        <div class="col-1 text-center"><input type="radio" name="a" /></div>
+        <div class="col-1 text-center"><input type="radio" name="a" /></div>
+        <div class="col-1 text-center"><input type="radio" name="a" /></div>
+
+        <div class="col-6 fw-bold"><h4>İletişim Bilgileri</h4></div>
+
+        <div class="col-2 fw-bold border border-dark border border-2">
+          <label for="b">Takım çalışmalarınız nasıl?</label>
+        </div>
+
+        <div class="col-1 text-center"><input type="radio" name="b" /></div>
+        <div class="col-1 text-center"><input type="radio" name="b" /></div>
+        <div class="col-1 text-center"><input type="radio" name="b" /></div>
+        <div class="col-1 text-center"><input type="radio" name="b" /></div>
+
+        <div class="col-3">Telefon*</div>
+        <div class="col-3"><input type="number" /></div>
+        <div class="col-2 fw-bold border border-dark border border-2">
+          <label for="c">Bilgisayar bilginiz nasıl?</label>
+        </div>
+
+        <div class="col-1 text-center"><input type="radio" name="c" /></div>
+        <div class="col-1 text-center"><input type="radio" name="c" /></div>
+        <div class="col-1 text-center"><input type="radio" name="c" /></div>
+        <div class="col-1 text-center"><input type="radio" name="c" /></div>
+
+        <div class="col-6">&emsp;</div>
+
+        <div class="col-2 fw-bold border border-dark border border-2">
+          <label for="d">İngilizce bilginiz hangi seviyede?</label>
+        </div>
+
+        <div class="col-1 text-center"><input type="radio" name="d" /></div>
+        <div class="col-1 text-center"><input type="radio" name="d" /></div>
+        <div class="col-1 text-center"><input type="radio" name="d" /></div>
+        <div class="col-1 text-center"><input type="radio" name="d" /></div>
+
+        <div class="col-3"><label for="email">E-mail*</label></div>
+
+        <div class="col-3"><input name="email" type="email" /></div>
+
+        <div class="col-6">&emsp;</div>
+
+        <div class="col-12">&emsp;</div>
+
+        <div class="col-3"><label for="adres">Adres*</label></div>
+
+        <div class="col-3">
+          <textarea name="adres" id="adres" cols="23" rows="2"></textarea>
+        </div>
+
+        <div class="col-12">&emsp;</div>
+
+        <div class="col-6">&emsp;</div>
+        <div class="col-2">
+          <label for="ekle">Eklemek istedikleriniz</label>
+        </div>
+        <div class="col-4 text-end">
+          <textarea name="ekle" id="ekle" cols="50" rows="3"></textarea>
+        </div>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <button type="button" class="btn btn-info col-1">BAŞVUR</button>
+          &emsp;
+          <button type="button" class="btn btn-danger col-1 text-black">
+            İPTAL ET
+          </button>
+        </div>
+
+        <div class="col-6"></div>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </div>
+  </body>
+</html>
