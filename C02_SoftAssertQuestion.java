@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -114,6 +115,11 @@ public class C02_SoftAssertQuestion {
         softAssert.assertEquals(allOptionsString,expectedOutput,"output is different. Some problems occured");
 
         softAssert.assertAll();
+    }
+
+    @AfterClass
+    public void tearDown(){
+        driver.close();
     }
 
 
